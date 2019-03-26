@@ -33,8 +33,7 @@ class SportsTeam < MiniTest::Test
 
   def test_points
     team = Team.new('Skye Camanachd', ["John","Steven","Dougie","Alan"], "Ally Mor", 0)
-    team.points = 2
-    assert_equal(2, team.points)
+    assert_equal(2, team.points("win"))
   end
 
 
